@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1298977985946996504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298977985946996485}
+  - component: {fileID: 1298977985946996506}
+  - component: {fileID: 1392078421}
+  - component: {fileID: 639230565}
+  - component: {fileID: 639230566}
+  - component: {fileID: 639230567}
+  m_Layer: 0
+  m_Name: SkillManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298977985946996485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298977985946996504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1298977985946996506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298977985946996504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc647ee67bccfd84fb3cb4d774efbe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1392078421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298977985946996504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9ae2b8293fe9a46a7794daaf431660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireBallPrefab: {fileID: 1506670501764102, guid: 19deeca5634e5724fbc19648733ac670,
+    type: 3}
+  _speed: 20
+  _damage: 20
+  _dotDamage: 10
+  _dotDuration: 5
+--- !u!114 &639230565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298977985946996504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7539fc20dbe07449103b21bb014d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mWaterGun: {fileID: 1522609394979808, guid: 985002ce806088c488fcee76bfafd6e4, type: 3}
+  mSpeed: 25
+  mDamage: 8
+  mExitTime: 3
+  mSlowAmount: 1
+  mSlowDuration: 1
+--- !u!114 &639230566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298977985946996504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf75f85b09b1ef2459038b6ee28cacd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mAirJet: {fileID: 1283372287858124, guid: 9b6288fd0c4aba44882bd84669a933b3, type: 3}
+  mDamage: 8
+  mSpeed: 20
+  mExitTime: 1.5
+  _knockBackLength: 0.5
+  _knockBackMultiplier: 2
+--- !u!114 &639230567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298977985946996504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed8511c2602631439e5507d2ac11fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EarthBoulder: {fileID: 1897621801385850, guid: eb585155ffd9c3442814fb518a3d0bea,
+    type: 3}
+  Points: {fileID: 0}
+  LaunchOffset: {x: 0, y: 0, z: 0}
+  _numberOfPoints: 20
+  _spaceBetweenPoints: 0.01
+  _lanchForce: 10
+  _mass: 2
+  _damage: 12
+  _splashRange: 1.5
+  _knockBackAmount: 8
+  _knockBackLength: 0.2
